@@ -1,0 +1,39 @@
+.pill {
+  display: inline-block;
+  border-radius: 100px;
+  padding: 2px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 20px;
+}
+
+/* Info (e.g. Due in 3 days) */
+.info {
+  background: var(--color-status-info-background, #E9F1FA);
+  color: var(--color-status-info-text, #1665B3);
+}
+
+/* Pending Review */
+.pending {
+  background: var(--color-status-pending-background, #F4F5F7);
+  color: var(--color-status-pending-text, #273139);
+}
+
+/* Warning (e.g. In progress) */
+.warning {
+  background: var(--color-status-warning-background, #FFF3DB);
+  color: var(--color-status-warning-text, #9E6100);
+}
+
+/* Success (e.g. Reviewed) */
+.success {
+  background: var(--color-status-success-background, #EEFFE5);
+  color: var(--color-status-success-text, #038108);
+}
+
+/* Done (fallback to foregroundPrimary) */
+.done {
+  background: var(--color-background-card);
+  color: var(--color-foreground-primary);
+} 

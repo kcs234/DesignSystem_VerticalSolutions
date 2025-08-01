@@ -1,0 +1,230 @@
+:root {
+  --color-header-background: #4c5353;
+  --color-header-text-primary: #f7f7f7;
+  --color-header-text-secondary: #efefef;
+  --color-header-accent: #fa4616;
+  --color-header-white: #ffffff;
+  --font-family-header: 'Noto Sans', sans-serif;
+}
+
+.header {
+  background: var(--color-header-background);
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 8px 24px;
+  box-sizing: border-box;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.customerInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.customerLogo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.customerLogoImage {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.customerName {
+  font-family: var(--font-family-header);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-header-text-primary);
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.poweredBySection {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.poweredByText {
+  font-family: var(--font-family-header);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-header-text-secondary);
+  line-height: 20px;
+  text-align: left;
+  height: 15px;
+  width: 77px;
+}
+
+.companyLogo {
+  height: 24px;
+  width: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companyLogo img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.verticalLine {
+  height: 24px;
+  width: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+  margin-left: 16px;
+  flex-shrink: 0;
+}
+
+.iconButton {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  color: var(--color-header-text-primary);
+  position: relative;
+}
+
+.iconButton svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+  opacity: 1;
+  z-index: 1;
+}
+
+.iconButton svg,
+.iconButton svg * {
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* MUI icon styling */
+.iconButton .MuiSvgIcon-root {
+  color: #ffffff !important;
+  font-size: 16px !important;
+}
+
+.iconButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.iconButton:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.userAvatar {
+  width: 32px;
+  height: 32px;
+  background: var(--color-header-accent);
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  font-family: var(--font-family-header);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-header-white);
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.userAvatar:hover {
+  background-color: #e63d14;
+}
+
+.userAvatar:active {
+  background-color: #d63511;
+}
+
+/* Focus states for accessibility */
+.iconButton:focus,
+.userAvatar:focus {
+  outline: 2px solid var(--color-header-text-primary);
+  outline-offset: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 8px 16px;
+  }
+  
+  .poweredByText {
+    display: none;
+  }
+  
+  .companyLogo {
+    width: 60px;
+  }
+  
+  .customerName {
+    font-size: 14px;
+  }
+} 

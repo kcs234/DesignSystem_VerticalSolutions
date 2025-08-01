@@ -1,0 +1,128 @@
+:root {
+  --color-background: #F8FAFC;
+  --color-background-card: #FFFFFF;
+  --color-foreground-primary: #434343;
+  --color-foreground-secondary: #4C5353;
+  --color-border: #CFD8DD;
+  --color-border-light: #F4F5F7;
+}
+
+.tableWrapper {
+  background: var(--color-background-card);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.04);
+  padding: 24px;
+  width: 1376px;
+  margin: 0 auto;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.controlBar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background: var(--color-border);
+  margin: 0 8px;
+}
+
+.table {
+  width: 100%;
+  min-width: 1328px;
+  border-collapse: collapse;
+  font-family: 'Noto Sans', sans-serif;
+  background: var(--color-background-card);
+}
+
+.th {
+  background: var(--color-background);
+  color: var(--color-foreground-primary);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 8px;
+  border-bottom: 2px solid var(--color-foreground-secondary);
+  text-align: left;
+}
+
+.td {
+  color: var(--color-foreground-primary);
+  font-size: 14px;
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--color-foreground-secondary);
+  background: var(--color-background-card);
+}
+
+.tr:last-child .td {
+  border-bottom: none;
+}
+
+.statusBadge {
+  display: inline-block;
+  border-radius: 100px;
+  padding: 2px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-background-card);
+  background: var(--color-foreground-secondary);
+}
+
+.dropdownButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-background-card);
+  border: none;
+  border-radius: 3px;
+  padding: 6px 12px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-foreground-secondary);
+  cursor: pointer;
+  height: 32px;
+}
+
+.dropdownButton:hover {
+  background: var(--color-border-light);
+}
+
+.sortIcon {
+  margin-left: 6px;
+  font-size: 12px;
+  color: var(--color-foreground-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .tableWrapper {
+    width: 100%;
+    max-width: 1376px;
+  }
+}
+
+@media (max-width: 900px) {
+  .controlBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .divider {
+    display: none;
+  }
+  
+  .tableWrapper {
+    padding: 16px;
+  }
+  
+  .table {
+    min-width: 1296px;
+  }
+} 

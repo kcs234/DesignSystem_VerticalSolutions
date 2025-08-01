@@ -1,0 +1,23 @@
+:root {
+  --font-family-base: 'Noto Sans', sans-serif;
+  --font-size-h2Bold: 32px;
+  --font-size-h4Bold: 20px;
+  --font-size-mBold: 14px;
+  --font-size-m: 14px;
+  --font-size-s: 12px;
+  --font-size-xs: 10px;
+
+  --font-weight-h2Bold: 400;
+  --font-weight-h4Bold: 600;
+  --font-weight-mBold: 600;
+  --font-weight-m: 400;
+  --font-weight-s: 400;
+  --font-weight-xs: 400;
+
+  --line-height-h2Bold: 40px;
+  --line-height-h4Bold: 24px;
+  --line-height-mBold: 20px;
+  --line-height-m: 20px;
+  --line-height-s: 16px;
+  --line-height-xs: 16px;
+} 

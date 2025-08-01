@@ -1,0 +1,38 @@
+.pill {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 4px;
+  border-radius: 3px;
+  font-family: 'Noto Sans', sans-serif;
+}
+.count {
+  font-size: 20px;
+  font-weight: 600;
+  color: #434343;
+  line-height: 24px;
+}
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+.icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+.label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #434343;
+  line-height: 20px;
+}
+.lowIcon {
+  background: var(--severity-low-background, #FEFBE8);
+  border: 1px solid var(--severity-low-border, #EAAA08);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+} 

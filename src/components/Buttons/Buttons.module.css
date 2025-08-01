@@ -1,0 +1,68 @@
+:root {
+  --color-background: #F8FAFC;
+  --color-background-card: #FFFFFF;
+  --color-foreground-primary: #434343;
+  --color-foreground-secondary: #4C5353;
+}
+
+.buttonsGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.dropdownButton,
+.iconLabelButton,
+.filledButton {
+  width: auto;
+  min-width: 0;
+  max-width: 100%;
+  display: inline-flex;
+}
+
+.dropdownButton {
+  align-items: center;
+  gap: 8px;
+  background: var(--color-background-card);
+  border: none;
+  border-radius: 3px;
+  padding: 6px 12px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-foreground-secondary);
+  cursor: pointer;
+}
+.dropdownLabel {
+  font-weight: 600;
+}
+.dropdownValue {
+  font-weight: 400;
+}
+
+.iconLabelButton {
+  align-items: center;
+  gap: 4px;
+  background: var(--color-background-card);
+  border: none;
+  border-radius: 3px;
+  padding: 6px 12px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-foreground-primary);
+  cursor: pointer;
+}
+
+.filledButton {
+  background: var(--color-foreground-primary);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-background-card);
+  cursor: pointer;
+} 

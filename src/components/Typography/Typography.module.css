@@ -1,0 +1,54 @@
+:root {
+  --color-dark-grey-4: var(--color-foreground-secondary);
+  --color-dark-grey-3: var(--color-foreground-primary);
+  --color-black: var(--color-foreground-primary);
+  --color-success: var(--color-status-success-text);
+}
+
+.h2Bold {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-h2Bold);
+  font-weight: var(--font-weight-h2Bold);
+  line-height: var(--line-height-h2Bold);
+  color: var(--color-black);
+}
+
+.h4Bold {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-h4Bold);
+  font-weight: var(--font-weight-h4Bold);
+  line-height: var(--line-height-h4Bold);
+  color: var(--color-dark-grey-4);
+}
+
+.mBold {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-mBold);
+  font-weight: var(--font-weight-mBold);
+  line-height: var(--line-height-mBold);
+  color: var(--color-dark-grey-3);
+}
+
+.m {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-m);
+  line-height: var(--line-height-m);
+  color: var(--color-dark-grey-3);
+}
+
+.s {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-s);
+  line-height: var(--line-height-s);
+  color: var(--color-success);
+}
+
+.xs {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-xs);
+  line-height: var(--line-height-xs);
+  color: var(--color-dark-grey-4);
+} 

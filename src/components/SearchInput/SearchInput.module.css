@@ -1,0 +1,40 @@
+:root {
+  --color-background: #F8FAFC;
+  --color-background-card: #FFFFFF;
+  --color-foreground-primary: #434343;
+  --color-foreground-secondary: #4C5353;
+  --color-border: #CFD8DD;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-background-card);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  padding: 6px 12px;
+  width: 240px;
+  height: 32px;
+  box-sizing: border-box;
+}
+
+.searchBox svg {
+  color: var(--color-foreground-secondary);
+  flex-shrink: 0;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  color: var(--color-foreground-primary);
+  width: 100%;
+  flex: 1;
+}
+
+.searchInput::placeholder {
+  color: var(--color-foreground-secondary);
+} 

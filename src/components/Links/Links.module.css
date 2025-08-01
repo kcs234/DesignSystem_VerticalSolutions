@@ -1,0 +1,44 @@
+:root {
+  --color-bluish: #1E6482; /* colors.primary or custom */
+}
+
+.linksGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.linkWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-foreground-secondary);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.linkWithIcon:hover {
+  text-decoration: underline;
+  color: var(--color-foreground-primary);
+}
+
+.linkLabelOnly {
+  color: var(--color-foreground-secondary);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.linkLabelOnly:hover {
+  text-decoration: underline;
+  color: var(--color-foreground-primary);
+} 
